@@ -43,8 +43,7 @@ func get_operands() (n1, n2 float32) {
 	return
 }
 
-func get_menu_choice() int {
-	var menu_choice int
+func get_menu_choice() (menu_choice int) {
 	fmt.Println("1. Add")
 	fmt.Println("2. Subtract")
 	fmt.Println("3. Multiply")
@@ -52,8 +51,9 @@ func get_menu_choice() int {
 	fmt.Println("5. Exit")
 	fmt.Println("Enter the choice :")
 	fmt.Scanln(&menu_choice)
-	return menu_choice
+	return
 }
+
 func add(x, y float32) float32 {
 	return x + y
 }
