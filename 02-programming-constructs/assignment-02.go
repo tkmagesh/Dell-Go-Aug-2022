@@ -23,7 +23,10 @@ package main
 import "fmt"
 
 func main() {
-	var menu_choice, n1, n2, result int
+	var (
+		menu_choice    int
+		n1, n2, result float32
+	)
 	for {
 		fmt.Println("1. Add")
 		fmt.Println("2. Subtract")
