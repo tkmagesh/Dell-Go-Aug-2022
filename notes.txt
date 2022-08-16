@@ -105,3 +105,8 @@ Data types
 
     byte (alias for uint8)
     rune (alias for int32, unicode code point)
+
+Variables
+    Unused variables at the function scope are NOT allowed
+    Unused constants at the function scope & package score are allowed
+    Unused variables at the package scope are allowed

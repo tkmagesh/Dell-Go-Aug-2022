@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+var myVar = 100
+
 func main() {
 	/*
 		var msg string
@@ -89,4 +91,68 @@ func main() {
 
 	s := fmt.Sprintf("%s %d[of type %T] and %d[of type %T] is %d[of type %T]\n", str, x, x, y, y, result, result)
 	fmt.Println(s)
+
+	/*
+		var myVar = 100
+		myVar = 200
+		fmt.Println(myVar)
+	*/
+
+	//constants
+	const pi = 3.14
+
+	//iota
+	/*
+		const (
+			red   = iota
+			green = iota
+			blue  = iota
+		)
+	*/
+
+	/*
+		const (
+			red = iota
+			green
+			blue
+		)
+	*/
+
+	/*
+		const (
+			red = iota + 2
+			green
+			blue
+		)
+	*/
+
+	/*
+		const (
+			red = iota * 2
+			green
+			blue
+		)
+	*/
+
+	const (
+		red = iota * 2
+		green
+		_
+		blue
+	)
+
+	fmt.Printf("red = %d, green = %d, blue = %d\n", red, green, blue)
+
+	const (
+		VERBOSE = 1 << iota
+		CONFIG_FROM_DISK
+		DATABASE_REQUIRED
+		LOGGER_ACTIVATED
+		DEBUG
+		FLOAT_SUPPORT
+		RECOVERY_MODE
+		REBOOT_ON_FAILURE
+	)
+	fmt.Printf("%b, %b, %b, %b, %b, %b, %b, %b\n", VERBOSE, CONFIG_FROM_DISK, DATABASE_REQUIRED, LOGGER_ACTIVATED, DEBUG, FLOAT_SUPPORT, RECOVERY_MODE, REBOOT_ON_FAILURE)
+
 }
