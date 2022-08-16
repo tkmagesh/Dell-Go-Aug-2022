@@ -133,6 +133,9 @@ func main() {
 		fallthrough
 	case "free":
 		fmt.Println("All free features")
+		fallthrough
+	default:
+		fmt.Println("Trial for 30 days")
 	}
 
 	fmt.Printf("\nfor construct\n")
