@@ -48,3 +48,34 @@ Why Go?
         * Performance equivalent to c++
 
     3. Concurrency
+        The ability to have more than one execution path in the application
+        In linux, 2 MB of RAM to create a thread
+        Concurrency is a language feature
+            go keyword, channel (data type), <- (channel operator), select & range constructs
+        SDK APIs - sync package, atomic package, runtime package
+
+
+
+To run a go program
+        go run <program_name.go>
+
+    To create a build
+        go build <program_name.go>
+        go build -o <binary_name> <program_name>.go
+
+        ./<program_name>
+        OR
+        <program_name>.exe
+
+    To create a build for other platforms
+    for ex: windows
+    
+        GOOS=windows GOARCH=386 go build <filename.go>
+        GOOS=windows GOARCH=386 go build -o <build_filename> <filename.go>
+
+    The list of other platform configurations can be found at :
+        https://go.dev/doc/install/source#environment
+
+    To change the default environment variables
+        go env -w GOOS=linux GOARCH=amd64
+        go build -o <build_filename> <filename.go>
