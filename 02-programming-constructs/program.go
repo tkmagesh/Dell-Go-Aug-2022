@@ -135,4 +135,38 @@ func main() {
 		fmt.Println("All free features")
 	}
 
+	fmt.Printf("\nfor construct\n")
+	fmt.Println("for v1.0")
+	for i := 0; i < 10; i++ {
+		fmt.Println(i)
+	}
+
+	fmt.Printf("\nfor v2.0 (like a while loop)\n")
+	no := 1
+	for no < 100 {
+		no += no
+	}
+	fmt.Printf("no = %d\n", no)
+
+	fmt.Printf("\nfor v3.0 (infinite loop)\n")
+	numSum := 1
+	for {
+		numSum += numSum
+		if numSum > 100 {
+			break
+		}
+	}
+	fmt.Printf("numSum = %d\n", numSum)
+
+	fmt.Printf("\nusing labels\n")
+OUTERLOOP:
+	for i := 0; i <= 9; i++ {
+		for j := 0; j <= 9; j++ {
+			fmt.Println(i, j)
+			if i == j {
+				continue OUTERLOOP
+			}
+		}
+	}
+
 }
