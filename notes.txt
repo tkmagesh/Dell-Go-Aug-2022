@@ -110,3 +110,9 @@ Variables
     Unused variables at the function scope are NOT allowed
     Unused constants at the function scope & package score are allowed
     Unused variables at the package scope are allowed
+
+Programming Constructs
+
+1. if else
+2. switch case
+3. for
