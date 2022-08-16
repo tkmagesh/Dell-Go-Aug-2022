@@ -81,9 +81,12 @@ func main() {
 		)
 	*/
 
-	x, y, str := 100, 200, "add result is"
+	x, y, str := 100, 200, "add result of "
 	result := x + y
 
-	fmt.Println(str, result)
+	//fmt.Println(str, result)
+	//fmt.Printf("%s %d[of type %T] and %d[of type %T] is %d[of type %T]\n", str, x, x, y, y, result, result)
 
+	s := fmt.Sprintf("%s %d[of type %T] and %d[of type %T] is %d[of type %T]\n", str, x, x, y, y, result, result)
+	fmt.Println(s)
 }
