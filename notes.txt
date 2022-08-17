@@ -117,9 +117,12 @@ Programming Constructs
 2. switch case
 3. for
 
+
+
 Anonymous functions
 Higher Order Functions
     functions are first class objects
         assign functions as values to variables
         pass functions as arguments to other functions
         return functions from other functions
+Variadic functions
