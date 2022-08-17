@@ -47,4 +47,7 @@ func main() {
 	fmt.Printf("Removing a key (%q)\n", keyToDelete)
 	delete(productRanks, keyToDelete)
 	fmt.Println(productRanks)
+
+	productRanks["Marker"] = 7
+	fmt.Println(productRanks)
 }
