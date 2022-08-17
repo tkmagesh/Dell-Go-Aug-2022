@@ -128,3 +128,11 @@ Higher Order Functions
 Variadic functions
 deferred functions
 
+Collections
+    Array
+        fixed size collection of data of the same type
+
+    Slice
+        varying size collection of data of the same type
+        
+    Map
