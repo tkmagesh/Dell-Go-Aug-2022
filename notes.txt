@@ -126,3 +126,5 @@ Higher Order Functions
         pass functions as arguments to other functions
         return functions from other functions
 Variadic functions
+deferred functions
+
