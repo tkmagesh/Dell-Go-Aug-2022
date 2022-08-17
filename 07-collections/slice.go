@@ -20,4 +20,9 @@ func main() {
 	tens := []int{10, 20, 30, 40}
 	nos = append(nos, tens...)
 	fmt.Println(nos)
+
+	newNos := nos
+	newNos[0] = 100
+	fmt.Println(newNos)
+	fmt.Println(nos)
 }
