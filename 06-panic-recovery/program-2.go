@@ -8,6 +8,13 @@ import (
 var DivideByZeroError = errors.New("divisor cannot be zero")
 
 func main() {
+	defer func() {
+		if err := recover(); err != nil {
+			fmt.Println("something went wrong")
+			return
+		}
+		fmt.Println("Thank you!")
+	}()
 
 	quotient, remainder, err := divide(100, 0)
 	if err != nil {
