@@ -79,8 +79,8 @@ func Format(p Product) string {
 	return fmt.Sprintf("id=%d name=%q, cost=%v, units=%d, category=%q", p.Id, p.Name, p.Cost, p.Units, p.Category)
 }
 
-func ApplyDiscount(p *Product, discountPercentage float32) {
-	p.Cost = p.Cost * ((100 - discountPercentage) / 100)
+func ApplyDiscount(p *Product, discountPercentage int) {
+	p.Cost = p.Cost * ((100 - float32(discountPercentage)) / 100)
 }
 
 func FormatPP(pp PerishableProduct) string {
