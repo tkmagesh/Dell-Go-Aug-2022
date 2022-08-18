@@ -192,4 +192,5 @@ Before Go 1.13
 
 
 
-    
+Interfaces
+    Interfaces are "implicitly" implemented in golang
