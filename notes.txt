@@ -137,3 +137,41 @@ Collections
         
     Map
         Collection of key/value pairs
+
+
+Before Go 1.13
+    GOPATH
+        pkg
+        bin
+        src
+            github.com
+                tkmagesh
+                    my-app
+                        app.go
+                        main.go
+                            import "github.com/tkmagesh/utils"
+                    utils
+                        utils.go
+
+    Go 1.13
+        Modules were introduced
+        go.mod
+            module name 
+            dependencies
+            targetted go runtime version
+
+        A module can have any number of packages
+            a package = folder
+
+    To create a module file
+        go mod init <module_name>
+        ex:
+            go mod init github.com/tkmagesh/my-app
+
+    To run the module (app)
+        go run .
+
+    To create a build
+        go build .
+
+
