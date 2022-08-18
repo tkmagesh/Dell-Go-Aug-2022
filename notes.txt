@@ -174,4 +174,19 @@ Before Go 1.13
     To create a build
         go build .
 
+    To download a 3rd party package
+        go get github.com/fatih/color
+
+    To update the go.mod file
+        go mod tidy
+
+    To localize the dependencies
+        go mod vendor
+    
+    Other mod commands
+            go mod graph
+            go mod why
+
+    Module command reference
+        https://go.dev/ref/mod
 
