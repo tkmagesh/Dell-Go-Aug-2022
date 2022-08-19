@@ -3,13 +3,22 @@ package main
 import "fmt"
 
 func main() {
-	ch := make(chan int)
+	//non-buffered channel
+	/*
+		ch := make(chan int)
 
-	go func() {
-		ch <- 100
-	}()
+		go func() {
+			ch <- 100
+		}()
 
+		val := <-ch
+
+		fmt.Println(val)
+	*/
+
+	//buffered channel
+	ch := make(chan int, 1)
+	ch <- 100
 	val := <-ch
-
 	fmt.Println(val)
 }
