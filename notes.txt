@@ -194,3 +194,7 @@ Before Go 1.13
 
 Interfaces
     Interfaces are "implicitly" implemented in golang
+
+Concurrency
+    1. Never assume the time taken for a function (goroutine) to execute
+    2. Never assume the execution sequence of goroutines
