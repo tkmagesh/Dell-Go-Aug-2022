@@ -198,3 +198,6 @@ Interfaces
 Concurrency
     1. Never assume the time taken for a function (goroutine) to execute
     2. Never assume the execution sequence of goroutines
+
+    To detect data races
+         go run -race demo-06.go 
