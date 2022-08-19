@@ -212,3 +212,20 @@ Concurrency
     Receive:
         result := <-ch
         A receive operation is ALWAYS a blocking operation
+
+
+IO
+    Reader interface
+    Writer interface
+    Closer interface
+    Seeker interface
+
+    os package
+        APIs for file manipulation
+            creating, opening, deleting files
+    
+    ioutil package
+        high level APIs for file reading & writing
+
+    bufio package
+        buffered I/O operation
