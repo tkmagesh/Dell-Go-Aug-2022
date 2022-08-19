@@ -201,3 +201,14 @@ Concurrency
 
     To detect data races
          go run -race demo-06.go 
+
+    Channel
+        ch := make(chan int)
+        channel operation : <-
+    Send:
+        ch <- value
+        A send operation is blocked until a receive operation is initiated (conditions apply)
+        
+    Receive:
+        result := <-ch
+        A receive operation is ALWAYS a blocking operation

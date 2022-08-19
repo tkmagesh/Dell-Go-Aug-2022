@@ -7,7 +7,6 @@ import (
 )
 
 var wg sync.WaitGroup
-
 var counter int64
 
 func main() {
